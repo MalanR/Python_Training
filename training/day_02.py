@@ -1,23 +1,10 @@
- # functions and loops
+# The process API
 
-def add(a, b):
-    return a + b
+# The goal for today, create a process API class that can register modules and call modules
+# Use the process API class to register a module for adding two values, call this modules and return the result
+# the process api in this context is a stores and serves modules
+# your modules will contain methods
+# you will need to call your methods through the process api.
 
-answer = add(23, 78)
-print(answer)
 
-
-list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-# for item in list:
-#     print(item)
-
-# I want to add each item in the list together and print the result
-def add_items():
-    total = 0
-    for item in list:
-        total += item
-    print(total)
-
-add_items()
 
