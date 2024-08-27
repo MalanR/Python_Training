@@ -1,0 +1,41 @@
+from msilib import Feature
+
+Feature: process API module workflow
+    Description: Create a process api
+
+Class: ProcessAPI
+    Description: "Class to register a module"
+
+    Fields:
+        modules: Type: Dictionary
+
+    Public Methods:
+        register:
+            Description: "Parse in the instance of a name to a module"
+            Parameters:
+                Module_name: Type: String
+                     Module: Type: dict
+
+        Call_module:
+            Description: "Call method from module and return method call"
+            Parameters:
+                Module_name: Type: String
+                Method_name: Type: String
+                     Params: Type: dict
+
+Class: MathModule
+    Descrption: "Class to perform numeric operations"
+
+    Public Methods:
+        add:
+            Description: "Method to add values"
+            Parameters:
+                Value1: Type: int
+                Value2: Type: int
+
+
+        multiply:
+            Description: "Method to multiply values"
+            Parameters:
+                Value1: Type: int
+                Value2: Type: int

@@ -13,7 +13,7 @@ class ProcessAPI:
     def register(self, name, module):
         self.modules[name] = module
 
-    def call(self, modules_name, method_name, params):
+    def call_modules(self, modules_name, method_name, params):
         model = self.modules[modules_name]
         method = getattr(model, method_name)
         return method(**params)
@@ -22,12 +22,12 @@ class ProcessAPI:
 class Math:
     @staticmethod
     def add_speed(a, b):
-        return a + b
+        return a+b
 
 
 api = ProcessAPI()
 api.register("car", Math)
-result = api.call("car", "add_speed", {"a": 14, "b": 2})
+result = api.call_modules("car", "add_speed", {"a": 14, "b": 2})
 print(result)
 
 class processAPI:
@@ -58,3 +58,8 @@ print(result)
 
 
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
