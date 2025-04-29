@@ -1,0 +1,14 @@
+Feature: Process Api
+    Description: This is class handel Process Api action
+    Class: Process Api
+        Description: " Class to register a module
+
+        Fields:
+            modules: Type: Dictionary
+
+        Public Methods:
+             register:
+                Description: name of the module
+                Parameters:
+                    Module_name:Type:String
+                         Module:Type:dict

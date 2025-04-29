@@ -19,7 +19,6 @@ del a[2]
 print(a)
 # 3. Create a dictionary with 2 arrays:
 
-
 # 4. Create an Array with 2 dictionaries:
 
 

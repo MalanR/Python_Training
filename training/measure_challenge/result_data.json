@@ -1,0 +1,53 @@
+{
+  'measurement': [
+    {
+      'code': UUID(
+      '55752e30-1ba0-4e92-9dd8-67ad9171b943'
+      ),
+      'description': 'Temperature',
+      'triggers': [
+        {
+          'code': 'T1',
+          'description': 'Temperature is too high',
+          'measure_code': UUID(
+          '55752e30-1ba0-4e92-9dd8-67ad9171b943'
+          )
+        },
+        {
+          'code': 'T2',
+          'description': 'Temperature is too low',
+          'measure_code': UUID('55752e30-1ba0-4e92-9dd8-67ad9171b943')
+        }
+      ]
+    },
+    {
+      'code': UUID(
+      'd7ded991-a4fc-4a98-920f-27d62ada29dd'
+      ),
+      'description': 'Humidity',
+      'triggers': [
+        {
+          'code': 'H1',
+          'description': 'Humidity is too high',
+          'measure_code': UUID(
+          'd7ded991-a4fc-4a98-920f-27d62ada29dd'
+          )
+        },
+        {
+          'code': 'H2',
+          'description': 'Humidity is too low',
+          'measure_code': UUID(
+          'd7ded991-a4fc-4a98-920f-27d62ada29dd'
+          )
+        },
+        {
+          'code': 'H3',
+          'description': 'Humidity is normal',
+          'measure_code': UUID(
+          'd7ded991-a4fc-4a98-920f-27d62ada29dd'
+          )
+        }
+      ]
+    }
+  ]
+}
